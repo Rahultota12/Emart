@@ -12,25 +12,25 @@ function Navbar() {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="#">Home</Link>
+          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="#">Product</Link>
+          <Link to="/Product" className="nav-link">Product</Link>
         </li>
       
         <li className="nav-item">
-          <Link className="nav-link ">About</Link>
+          <Link className="nav-link " to="/about">About</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link">Contact</Link>
+          <Link className="nav-link" to="/contact">Contact</Link>
         </li>
       </ul>
      <div className="button">
-      <Link to="" className="btn btn-outline-dark">
+      <Link to="/login" className="btn btn-outline-dark">
      <i className='fa fa-sign-in me-1'></i> Login</Link>
-      <Link to="" className="btn btn-outline-dark ms-2">
+      <Link to="/register" className="btn btn-outline-dark ms-2">
      <i className='fa fa-user-plus me-1'></i>Registration</Link>
-      <Link to="" className="btn btn-outline-dark ms-2">
+      <Link to="/cart" className="btn btn-outline-dark ms-2">
      <i className='fa fa-shopping-cart me-1'></i> Cart (0)</Link>
      </div>
     </div>
